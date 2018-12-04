@@ -1,0 +1,652 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		248F2D3121B6602000E33A6F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 248F2D3021B6602000E33A6F /* AppDelegate.m */; };
+		248F2D3421B6602000E33A6F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 248F2D3321B6602000E33A6F /* ViewController.m */; };
+		248F2D3721B6602000E33A6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 248F2D3521B6602000E33A6F /* Main.storyboard */; };
+		248F2D3921B6602000E33A6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 248F2D3821B6602000E33A6F /* Assets.xcassets */; };
+		248F2D3C21B6602000E33A6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 248F2D3A21B6602000E33A6F /* LaunchScreen.storyboard */; };
+		248F2D3F21B6602000E33A6F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 248F2D3E21B6602000E33A6F /* main.m */; };
+		248F2D4921B6602000E33A6F /* LXAddressBookDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 248F2D4821B6602000E33A6F /* LXAddressBookDemoTests.m */; };
+		248F2D5421B6602000E33A6F /* LXAddressBookDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 248F2D5321B6602000E33A6F /* LXAddressBookDemoUITests.m */; };
+		248F2DA921B6609400E33A6F /* UIColor+LX.m in Sources */ = {isa = PBXBuildFile; fileRef = 248F2DA521B6609300E33A6F /* UIColor+LX.m */; };
+		248F2DB421B661A500E33A6F /* PPGetAddressBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 248F2DAD21B661A500E33A6F /* PPGetAddressBook.m */; };
+		248F2DB521B661A500E33A6F /* PPPersonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 248F2DAE21B661A500E33A6F /* PPPersonModel.m */; };
+		248F2DB621B661A500E33A6F /* PPAddressBookHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 248F2DB321B661A500E33A6F /* PPAddressBookHandle.m */; };
+		248F2DBA21B6631700E33A6F /* LXMyFriendTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 248F2DB821B6631700E33A6F /* LXMyFriendTableViewCell.m */; };
+		248F2DBB21B6631700E33A6F /* LXMyFriendTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 248F2DB921B6631700E33A6F /* LXMyFriendTableViewCell.xib */; };
+		248F2DBE21B6657C00E33A6F /* UIImage+LX.m in Sources */ = {isa = PBXBuildFile; fileRef = 248F2DBC21B6657C00E33A6F /* UIImage+LX.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		248F2D4521B6602000E33A6F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 248F2D2421B6602000E33A6F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 248F2D2B21B6602000E33A6F;
+			remoteInfo = LXAddressBookDemo;
+		};
+		248F2D5021B6602000E33A6F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 248F2D2421B6602000E33A6F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 248F2D2B21B6602000E33A6F;
+			remoteInfo = LXAddressBookDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		248F2D2C21B6602000E33A6F /* LXAddressBookDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LXAddressBookDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		248F2D2F21B6602000E33A6F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		248F2D3021B6602000E33A6F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		248F2D3221B6602000E33A6F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		248F2D3321B6602000E33A6F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		248F2D3621B6602000E33A6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		248F2D3821B6602000E33A6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		248F2D3B21B6602000E33A6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		248F2D3D21B6602000E33A6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		248F2D3E21B6602000E33A6F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		248F2D4421B6602000E33A6F /* LXAddressBookDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LXAddressBookDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		248F2D4821B6602000E33A6F /* LXAddressBookDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXAddressBookDemoTests.m; sourceTree = "<group>"; };
+		248F2D4A21B6602000E33A6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		248F2D4F21B6602000E33A6F /* LXAddressBookDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LXAddressBookDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		248F2D5321B6602000E33A6F /* LXAddressBookDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXAddressBookDemoUITests.m; sourceTree = "<group>"; };
+		248F2D5521B6602000E33A6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		248F2DA521B6609300E33A6F /* UIColor+LX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+LX.m"; sourceTree = "<group>"; };
+		248F2DA721B6609300E33A6F /* UIColor+LX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+LX.h"; sourceTree = "<group>"; };
+		248F2DAB21B6609C00E33A6F /* LX_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LX_Prefix.pch; sourceTree = "<group>"; };
+		248F2DAD21B661A500E33A6F /* PPGetAddressBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPGetAddressBook.m; sourceTree = "<group>"; };
+		248F2DAE21B661A500E33A6F /* PPPersonModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPPersonModel.m; sourceTree = "<group>"; };
+		248F2DAF21B661A500E33A6F /* PPAddressBookHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPAddressBookHandle.h; sourceTree = "<group>"; };
+		248F2DB021B661A500E33A6F /* PPSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPSingleton.h; sourceTree = "<group>"; };
+		248F2DB121B661A500E33A6F /* PPGetAddressBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPGetAddressBook.h; sourceTree = "<group>"; };
+		248F2DB221B661A500E33A6F /* PPPersonModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPPersonModel.h; sourceTree = "<group>"; };
+		248F2DB321B661A500E33A6F /* PPAddressBookHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPAddressBookHandle.m; sourceTree = "<group>"; };
+		248F2DB721B6631700E33A6F /* LXMyFriendTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXMyFriendTableViewCell.h; sourceTree = "<group>"; };
+		248F2DB821B6631700E33A6F /* LXMyFriendTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXMyFriendTableViewCell.m; sourceTree = "<group>"; };
+		248F2DB921B6631700E33A6F /* LXMyFriendTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LXMyFriendTableViewCell.xib; sourceTree = "<group>"; };
+		248F2DBC21B6657C00E33A6F /* UIImage+LX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+LX.m"; sourceTree = "<group>"; };
+		248F2DBD21B6657C00E33A6F /* UIImage+LX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+LX.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		248F2D2921B6602000E33A6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		248F2D4121B6602000E33A6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		248F2D4C21B6602000E33A6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		248F2D2321B6602000E33A6F = {
+			isa = PBXGroup;
+			children = (
+				248F2D2E21B6602000E33A6F /* LXAddressBookDemo */,
+				248F2D4721B6602000E33A6F /* LXAddressBookDemoTests */,
+				248F2D5221B6602000E33A6F /* LXAddressBookDemoUITests */,
+				248F2D2D21B6602000E33A6F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		248F2D2D21B6602000E33A6F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				248F2D2C21B6602000E33A6F /* LXAddressBookDemo.app */,
+				248F2D4421B6602000E33A6F /* LXAddressBookDemoTests.xctest */,
+				248F2D4F21B6602000E33A6F /* LXAddressBookDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		248F2D2E21B6602000E33A6F /* LXAddressBookDemo */ = {
+			isa = PBXGroup;
+			children = (
+				248F2DAB21B6609C00E33A6F /* LX_Prefix.pch */,
+				248F2D9F21B6609300E33A6F /* Lib */,
+				248F2DA321B6609300E33A6F /* Category */,
+				248F2D2F21B6602000E33A6F /* AppDelegate.h */,
+				248F2D3021B6602000E33A6F /* AppDelegate.m */,
+				248F2D3221B6602000E33A6F /* ViewController.h */,
+				248F2D3321B6602000E33A6F /* ViewController.m */,
+				248F2DB721B6631700E33A6F /* LXMyFriendTableViewCell.h */,
+				248F2DB821B6631700E33A6F /* LXMyFriendTableViewCell.m */,
+				248F2DB921B6631700E33A6F /* LXMyFriendTableViewCell.xib */,
+				248F2D3521B6602000E33A6F /* Main.storyboard */,
+				248F2D3821B6602000E33A6F /* Assets.xcassets */,
+				248F2D3A21B6602000E33A6F /* LaunchScreen.storyboard */,
+				248F2D3D21B6602000E33A6F /* Info.plist */,
+				248F2D3E21B6602000E33A6F /* main.m */,
+			);
+			path = LXAddressBookDemo;
+			sourceTree = "<group>";
+		};
+		248F2D4721B6602000E33A6F /* LXAddressBookDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				248F2D4821B6602000E33A6F /* LXAddressBookDemoTests.m */,
+				248F2D4A21B6602000E33A6F /* Info.plist */,
+			);
+			path = LXAddressBookDemoTests;
+			sourceTree = "<group>";
+		};
+		248F2D5221B6602000E33A6F /* LXAddressBookDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				248F2D5321B6602000E33A6F /* LXAddressBookDemoUITests.m */,
+				248F2D5521B6602000E33A6F /* Info.plist */,
+			);
+			path = LXAddressBookDemoUITests;
+			sourceTree = "<group>";
+		};
+		248F2D9F21B6609300E33A6F /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				248F2DAC21B661A500E33A6F /* PPGetAddressBook */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		248F2DA321B6609300E33A6F /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				248F2DA721B6609300E33A6F /* UIColor+LX.h */,
+				248F2DA521B6609300E33A6F /* UIColor+LX.m */,
+				248F2DBD21B6657C00E33A6F /* UIImage+LX.h */,
+				248F2DBC21B6657C00E33A6F /* UIImage+LX.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		248F2DAC21B661A500E33A6F /* PPGetAddressBook */ = {
+			isa = PBXGroup;
+			children = (
+				248F2DAD21B661A500E33A6F /* PPGetAddressBook.m */,
+				248F2DAE21B661A500E33A6F /* PPPersonModel.m */,
+				248F2DAF21B661A500E33A6F /* PPAddressBookHandle.h */,
+				248F2DB021B661A500E33A6F /* PPSingleton.h */,
+				248F2DB121B661A500E33A6F /* PPGetAddressBook.h */,
+				248F2DB221B661A500E33A6F /* PPPersonModel.h */,
+				248F2DB321B661A500E33A6F /* PPAddressBookHandle.m */,
+			);
+			path = PPGetAddressBook;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		248F2D2B21B6602000E33A6F /* LXAddressBookDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 248F2D5821B6602000E33A6F /* Build configuration list for PBXNativeTarget "LXAddressBookDemo" */;
+			buildPhases = (
+				248F2D2821B6602000E33A6F /* Sources */,
+				248F2D2921B6602000E33A6F /* Frameworks */,
+				248F2D2A21B6602000E33A6F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LXAddressBookDemo;
+			productName = LXAddressBookDemo;
+			productReference = 248F2D2C21B6602000E33A6F /* LXAddressBookDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		248F2D4321B6602000E33A6F /* LXAddressBookDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 248F2D5B21B6602000E33A6F /* Build configuration list for PBXNativeTarget "LXAddressBookDemoTests" */;
+			buildPhases = (
+				248F2D4021B6602000E33A6F /* Sources */,
+				248F2D4121B6602000E33A6F /* Frameworks */,
+				248F2D4221B6602000E33A6F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				248F2D4621B6602000E33A6F /* PBXTargetDependency */,
+			);
+			name = LXAddressBookDemoTests;
+			productName = LXAddressBookDemoTests;
+			productReference = 248F2D4421B6602000E33A6F /* LXAddressBookDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		248F2D4E21B6602000E33A6F /* LXAddressBookDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 248F2D5E21B6602000E33A6F /* Build configuration list for PBXNativeTarget "LXAddressBookDemoUITests" */;
+			buildPhases = (
+				248F2D4B21B6602000E33A6F /* Sources */,
+				248F2D4C21B6602000E33A6F /* Frameworks */,
+				248F2D4D21B6602000E33A6F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				248F2D5121B6602000E33A6F /* PBXTargetDependency */,
+			);
+			name = LXAddressBookDemoUITests;
+			productName = LXAddressBookDemoUITests;
+			productReference = 248F2D4F21B6602000E33A6F /* LXAddressBookDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		248F2D2421B6602000E33A6F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "https://github.com/nick8brown";
+				TargetAttributes = {
+					248F2D2B21B6602000E33A6F = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					248F2D4321B6602000E33A6F = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 248F2D2B21B6602000E33A6F;
+					};
+					248F2D4E21B6602000E33A6F = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 248F2D2B21B6602000E33A6F;
+					};
+				};
+			};
+			buildConfigurationList = 248F2D2721B6602000E33A6F /* Build configuration list for PBXProject "LXAddressBookDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 248F2D2321B6602000E33A6F;
+			productRefGroup = 248F2D2D21B6602000E33A6F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				248F2D2B21B6602000E33A6F /* LXAddressBookDemo */,
+				248F2D4321B6602000E33A6F /* LXAddressBookDemoTests */,
+				248F2D4E21B6602000E33A6F /* LXAddressBookDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		248F2D2A21B6602000E33A6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				248F2D3C21B6602000E33A6F /* LaunchScreen.storyboard in Resources */,
+				248F2DBB21B6631700E33A6F /* LXMyFriendTableViewCell.xib in Resources */,
+				248F2D3921B6602000E33A6F /* Assets.xcassets in Resources */,
+				248F2D3721B6602000E33A6F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		248F2D4221B6602000E33A6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		248F2D4D21B6602000E33A6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		248F2D2821B6602000E33A6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				248F2DB421B661A500E33A6F /* PPGetAddressBook.m in Sources */,
+				248F2D3421B6602000E33A6F /* ViewController.m in Sources */,
+				248F2DB521B661A500E33A6F /* PPPersonModel.m in Sources */,
+				248F2D3F21B6602000E33A6F /* main.m in Sources */,
+				248F2DBE21B6657C00E33A6F /* UIImage+LX.m in Sources */,
+				248F2DB621B661A500E33A6F /* PPAddressBookHandle.m in Sources */,
+				248F2DA921B6609400E33A6F /* UIColor+LX.m in Sources */,
+				248F2DBA21B6631700E33A6F /* LXMyFriendTableViewCell.m in Sources */,
+				248F2D3121B6602000E33A6F /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		248F2D4021B6602000E33A6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				248F2D4921B6602000E33A6F /* LXAddressBookDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		248F2D4B21B6602000E33A6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				248F2D5421B6602000E33A6F /* LXAddressBookDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		248F2D4621B6602000E33A6F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 248F2D2B21B6602000E33A6F /* LXAddressBookDemo */;
+			targetProxy = 248F2D4521B6602000E33A6F /* PBXContainerItemProxy */;
+		};
+		248F2D5121B6602000E33A6F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 248F2D2B21B6602000E33A6F /* LXAddressBookDemo */;
+			targetProxy = 248F2D5021B6602000E33A6F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		248F2D3521B6602000E33A6F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				248F2D3621B6602000E33A6F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		248F2D3A21B6602000E33A6F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				248F2D3B21B6602000E33A6F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		248F2D5621B6602000E33A6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		248F2D5721B6602000E33A6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		248F2D5921B6602000E33A6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3SUKXDZAXF;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/LX_Prefix.pch";
+				INFOPLIST_FILE = LXAddressBookDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "https---github.com-nick8brown.LXAddressBookDemo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		248F2D5A21B6602000E33A6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3SUKXDZAXF;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/LX_Prefix.pch";
+				INFOPLIST_FILE = LXAddressBookDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "https---github.com-nick8brown.LXAddressBookDemo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		248F2D5C21B6602000E33A6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LXAddressBookDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "https---github.com-nick8brown.LXAddressBookDemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LXAddressBookDemo.app/LXAddressBookDemo";
+			};
+			name = Debug;
+		};
+		248F2D5D21B6602000E33A6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LXAddressBookDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "https---github.com-nick8brown.LXAddressBookDemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LXAddressBookDemo.app/LXAddressBookDemo";
+			};
+			name = Release;
+		};
+		248F2D5F21B6602000E33A6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LXAddressBookDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "https---github.com-nick8brown.LXAddressBookDemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LXAddressBookDemo;
+			};
+			name = Debug;
+		};
+		248F2D6021B6602000E33A6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LXAddressBookDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "https---github.com-nick8brown.LXAddressBookDemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LXAddressBookDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		248F2D2721B6602000E33A6F /* Build configuration list for PBXProject "LXAddressBookDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				248F2D5621B6602000E33A6F /* Debug */,
+				248F2D5721B6602000E33A6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		248F2D5821B6602000E33A6F /* Build configuration list for PBXNativeTarget "LXAddressBookDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				248F2D5921B6602000E33A6F /* Debug */,
+				248F2D5A21B6602000E33A6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		248F2D5B21B6602000E33A6F /* Build configuration list for PBXNativeTarget "LXAddressBookDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				248F2D5C21B6602000E33A6F /* Debug */,
+				248F2D5D21B6602000E33A6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		248F2D5E21B6602000E33A6F /* Build configuration list for PBXNativeTarget "LXAddressBookDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				248F2D5F21B6602000E33A6F /* Debug */,
+				248F2D6021B6602000E33A6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 248F2D2421B6602000E33A6F /* Project object */;
+}
